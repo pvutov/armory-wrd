@@ -24,6 +24,7 @@ module BackendRails
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    config.force_ssl = true
     config.hosts << "pvutov.com"
   end
 end
