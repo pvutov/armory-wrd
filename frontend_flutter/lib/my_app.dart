@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'list_page.dart';
 import 'home_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -21,6 +22,11 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      initialRoute: '/',
+      routes: {
+        //'/create': (context) => CreatePage(),
+        '/list': (context) => const ListPage(title: "List page"),
+      },
       home: const HomePage(title: 'Flutter Demo Home Page'),
     );
   }

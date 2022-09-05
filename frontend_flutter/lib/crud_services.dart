@@ -17,8 +17,7 @@ class CrudServices{
 
   Future<http.Response> getItems() async{
     http.Response response = await http.get(
-        baseUrl,
-        headers: headers);
+        baseUrl);
     return response;
   }
 }
